@@ -1,13 +1,8 @@
 <template>
   <div id="app">
-    {{ count }}
-    <br />
-    {{ $store.getters.doubleCount }}
-    <a-button @click="$store.commit('increment', 2)"> 按钮commit{{ count }}</a-button>
-    <a-button @click="$store.dispatch('increment')"> 按钮dispatch{{ count }}</a-button>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/dashboard/analysis">分析页</router-link> |
+      <router-link to="/form">表格</router-link>
     </div>
     <router-view />
   </div>
